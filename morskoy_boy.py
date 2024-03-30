@@ -347,8 +347,6 @@ class Game:
         players = [self.get_user(), self.get_bot()]
         move = 0
         while not self.end_of_game():
-            for ship in self.get_bot().get_player_field().get_ships():
-                print(ship.get_hp())
             if not move:
                 print('Ваш ход')
                 players[0].get_enemy_field().print_board()
